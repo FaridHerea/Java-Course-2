@@ -26,6 +26,8 @@ public class all {
 		System.out.println(setCapsule.getFirstNumber() + " plus " + setCapsule.getSecondNumber() + " is " + setCapsule.getSum() + " !");
 		//using polymorphism
 		my.punchLine("oneHitKill");
+		//calculation using polymorphism
+		my.input(setCapsule.getFirstNumber(), setCapsule.getSecondNumber(), setCapsule.getSum());
 		
 		//using abstraction
 //		AbstractClass myAbstractClass = new AbstractClass();
@@ -95,7 +97,12 @@ class Capsule {
 
 //Polymorphism
 class Polymorphism{
+		
 	public void punchLine(String oneHitKill) {
 		System.out.println("Quick maphs!");
+	}
+	public void input(int firstInput, int secondInput, int inputSum) {
+		inputSum=firstInput+secondInput;
+		System.out.println(firstInput + " plus " + secondInput + " is " + inputSum + ". Two times is " + inputSum*2 + "!");
 	}
 }
